@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./portfolio.css" />
+    <link rel="icon" type="image/x-icon" href="myFavicon.ico" />
+    <script src="https://kit.fontawesome.com/3ff8d1387f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>Portfolio</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="nav_bar">
+      <li>#MyPortFolio</li>
+    </ul>
+
+    <div class="home">
+      <div class="home_content">
+        <p class="para1">HELL-O-WORLD !</p>
+        <p class="para2">
+          I'M <span style="color: #008080">HRITIK</span> RAHEJA
+        </p>
+        <p class="para3">ANDROID AND WEB DEVELOPER</p>
+        <a href="./meraResume.pdf" target="_blank"
+          ><button class="download_button">Download Resume</button></a
+        >
+      </div>
+      <img src="./images/inmage.png" class="pic" />
+    </div>
+
+    <hr class="division1" size="1" color="#000" />
+
+    <div class="about_div">
+      <span class="about_me_heading">ABOUT ME</span>
+      <span class="about_me_content"
+        >My name is <b>Hritik</b>, and I am an enthusiastic engineering student
+        who enjoys learning new things and implementing them in real life to
+        solve problems. I am a hard worker, who can work smartly. While I'm
+        based in Uttar Pradesh, India, I can help build web and android
+        applications all over the world. I am currently pursuing
+        <b>Computer Science Engineering</b> from
+        <b>GLA University, Mathura (2019 - 2023)</b>. Fond of thinking out of
+        the box in order to create extraordinary things.<i
+          ><br /><br />Some of my skills include :</i
+        ><br
+      /></span>
+      <ul>
+        <li>
+          <b>Object oriented programming</b> in java with hands on experience.
+        </li>
+        <li>Full stack web development using <b>MERN Stack.</b></li>
+        <li>Good understanding of <b>API's and JSON/XML.</b></li>
+        <li>
+          Familiar with <b>cloud computing</b> and
+          <b>realtime cloud databases</b> like google firebase.
+        </li>
+      </ul>
+    </div>
+
+    <span class="stats_heading">Leetcode Statistics</span>
+    <div id="bar_graph"></div>
+    <div class="stats">
+      <span class="acceptance_rate" id="total_questions_id"
+        >Total Questions Solved : 139</span
+      >
+      <span class="acceptance_rate" id="acceptance_rate_id"
+        >Acceptance Rate : 58.5%</span
+      >
+    </div>
+
+    <span class="projects_heading">CERTIFICATIONS</span>
+
+    <div class="certificates_div" id="c">
+      <div class="certificate">
+        <span class="certi_title"><b>Android App Development</b></span>
+        <span class="t1"> Issued By:- </span>
+        <span class="certi_issuer">AZeotropy, IIT Bombay</span>
+        <button
+          class="show_certi_button"
+          id="show_certi_button"
+          onclick="showCredential('./images/certi1.jpg')"
+        >
+          Show Certificate
+        </button>
+      </div>
+
+      <div class="certificate">
+        <span class="certi_title"><b>Basics Of Cloud Computing</b></span>
+        <span class="t1"> Issued By:- </span>
+        <span class="certi_issuer">Manipal ProLearn</span>
+        <button
+          class="show_certi_button"
+          id="show_certi_button"
+          onclick="showCredential('./images/certi2.png')"
+        >
+          Show Certificate
+        </button>
+      </div>
+
+      <div class="certificate">
+        <span class="certi_title"><b>Ethical Hacking</b></span>
+        <span class="t1"> Issued By:- </span>
+        <span class="certi_issuer">AZeotropy, IIT Bombay</span>
+        <button
+          class="show_certi_button"
+          id="show_certi_button"
+          onclick="showCredential('./images/certi3.jpg')"
+        >
+          Show Certificate
+        </button>
+      </div>
+
+      <div class="certificate">
+        <span class="certi_title"
+          ><b>English For Personal And Professional Development</b></span
+        >
+        <span class="t1"> Issued By:- </span>
+        <span class="certi_issuer">IIIT Kota</span>
+        <button
+          class="show_certi_button"
+          id="show_certi_button"
+          onclick="showCredential('./images/certi4.png')"
+        >
+          Show Certificate
+        </button>
+      </div>
+
+      <div class="certificate">
+        <span class="certi_title"><b>Fundamentals Of Communication</b></span>
+        <span class="t1"> Issued By:- </span>
+        <span class="certi_issuer">Deakin Co.</span>
+        <button
+          class="show_certi_button"
+          id="show_certi_button"
+          onclick="showCredential('./images/certi5.png')"
+        >
+          Show Certificate
+        </button>
+      </div>
+    </div>
+
+    <span class="projects_heading">PROJECTS</span>
+    <div class="projects_div">
+      <div class="project">
+        <span class="head">SAW, India</span>
+        <span class="desc"
+          ><b>SAW India</b> stands for <b>Stray Animal Welfare India</b>. As its
+          name suggests, this project is focused on stray animal welfare in
+          India. It provides end users with information on all animal welfare
+          organizations in the area if they see an animal in need. It consists
+          of three parts, i.e. an end user application, a helper application and
+          an admin console.<br />Some major features of this project include :
+        </span>
+        <ul class="project_features">
+          <li>
+            <b>YouTube API</b> to show related videos to users to promote animal
+            welfare.
+          </li>
+          <li>
+            <b>Google Firebase Realtime Database</b> to keep track of all users
+            and complaints.
+          </li>
+          <li>
+            <b>Google Places And Maps API's</b> to get details of nearby animal
+            welfare organizations.
+          </li>
+          <li><b>Firebase Storage</b> to store images of injured animals.</li>
+          <li><b>Razorpay API</b> for facilitating people to donate.</li>
+          <li>
+            <b>Firebase Authentication</b> in order to ensure the credibility of
+            users.
+          </li>
+        </ul>
+        <a target="_blank" href="https://github.com/hritikraheja/SAW-India"
+          ><button class="visit_code_button">
+            VISIT PROJECT REPOSITORY
+          </button></a
+        >
+      </div>
+
+      <div class="project">
+        <span class="head">KHATABOOK</span>
+        <span class="desc"
+          >Khatabook is an android application that I have during my internship
+          with <b>The Sparks Foundation</b>. This project is a basic banking
+          system that facilitates users to tranfer money and keep record of all
+          transactions. <br />Some features of this project include :
+        </span>
+        <ul class="project_features">
+          <li>
+            This project contains <b>dummy data of 10 users</b>, i.e. their
+            name, phone number, email, etc.
+          </li>
+          <li>
+            It keeps track of all transactions that are done by each user.
+          </li>
+          <li>
+            It uses <b>SQLite database</b> to keep track of user and transfer
+            details.
+          </li>
+        </ul>
+        <a target="_blank" href="https://github.com/hritikraheja/KHATABOOK"
+          ><button class="visit_code_button">
+            VISIT PROJECT REPOSITORY
+          </button></a
+        >
+      </div>
+
+      <div class="project">
+        <span class="head">RESTRO</span>
+        <span class="desc"
+          >It is a web application that is based on e-commerce. It facilitates
+          the customers to view the menu of the restauraunt, the details of the
+          restauraunt and the reviews of the previous customers. It also
+          provides the basic facilitates of login/ sign in and order cart. Some
+          features of this project include :
+        </span>
+        <ul class="project_features">
+          <li>
+            This project is purely built by use of
+            <b>HTML, CSS and Javascript</b>.
+          </li>
+          <li>
+            It uses <b>Firebase Realtime Database</b> for storing the menu items
+            and customer details.
+          </li>
+          <li>
+            It contains basic login system and order cart, implemented using
+            <b>Javascript</b>.
+          </li>
+        </ul>
+        <a
+          target="_blank"
+          href="https://github.com/dheeraj-singhal/e-restro-services2"
+          ><button class="visit_code_button">
+            VISIT PROJECT REPOSITORY
+          </button></a
+        >
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer_icons">
+        <a href="https://github.com/hritikraheja" target="_blank"><i class="fa-brands fa-github icon fa-3x"></i></a>
+        <a href="https://www.linkedin.com/in/hritik-raheja-124310175/"><i class="fa-brands fa-linkedin icon fa-3x"></i></a>
+        <a href="mailto:hritikraheja27@gmail.com"><i class="fa-solid fa-square-envelope icon fa-3x"></i></a>
+        <i class="fa-solid fa-square-phone-flip icon fa-3x" onclick="copyPhoneNumberToClipBoard()"></i>
+      </div>
+      <ul class="footer_links">
+        <a>HOME</a>
+        <span class="sep">|</span>
+        <a>ABOUT ME</a>
+        <span class="sep">|</span>
+        <a>CERTIFICATIONS</a>
+        <span class="sep">|</span>
+        <a>PROJECTS</a>
+    </footer>
+    <footer class="quote_div">
+      <span class="q1">WORKING ON MYSELF,  BY MYSELF,  FOR MYSELF.</span><br>
+      <span class="q"></span>
+    </footer>
+    <dialog class="preview" id="pre" open>
+      <img src="./images/dog.jpg" id="pre2" class="preview_img" />
+      <button class="preview_close_button" onclick="hideCredential()">
+        CLOSE
+      </button>
+    </dialog>
+    <script src="./bar_graph.js"></script>
+    <script src="./certificate_preview.js"></script>
+    <script src="./copyToClipboard.js"></script>
+  </body>
+</html>
