@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-11</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+      }
+      main {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: cadetblue;
+        font-size: 40px;
+      }
+      footer {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.884);
+      }
+      .main-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 30px 10px;
+      }
+      .main-content h2 {
+        font-size: 20px;
+        color: whitesmoke;
+        text-transform: uppercase;
+      }
+      .main-content ul {
+        list-style: none;
+      }
+      .about {
+        width: 40%;
+        padding: 0 25px;
+      }
+      .about p {
+        text-align: justify;
+        color: whitesmoke;
+        margin-top: 15px;
+      }
+      .link {
+        padding: 0 15px;
+      }
+      .link h2 {
+        margin-bottom: 14px;
+      }
+      a {
+        text-decoration: none;
+        color: gray;
+      }
+      a:hover {
+        color: orange;
+      }
+      a i {
+        text-decoration: none;
+        color: whitesmoke;
+      }
+      a i:hover {
+        color: orange;
+      }
+      a span {
+        text-decoration: none;
+        color: gray;
+      }
+      a span:hover {
+        color: rgb(150, 141, 125);
+      }
+      span {
+        color: gray;
+      }
+      i {
+        color: whitesmoke;
+        font-size: 22px;
+        margin-right: 10px;
+      }
+      .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+        border-top: 2px solid rgba(255, 255, 255, 0.1);
+      }
+      .form p {
+        color: whitesmoke;
+        font-size: 25px;
+      }
+      .form a {
+        display: inline-block;
+        padding: 10px 25px;
+        color: white;
+        background-color: red;
+        margin-left: 10px;
+        border-radius: 20px;
+        font-size: 25px;
+      }
+      .form a:hover {
+        background-color: orange;
+      }
+      .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+        border-top: 2px solid rgba(255, 255, 255, 0.1);
+      }
+      .social ul {
+        list-style: none;
+      }
+      .social ul li {
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        padding: 17.5px;
+        background-color: gray;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      .social ul li i {
+        font-size: 25px;
+        line-height: 20px;
+      }
+      .social ul li:nth-child(1):hover {
+        background-color: #3b5999;
+      }
+      .social ul li:nth-child(2):hover {
+        background-color: black;
+      }
+      .social ul li:nth-child(3):hover {
+        background-color: #dd4b39;
+      }
+      .social ul li:nth-child(4):hover {
+        background-color: #0077b5;
+      }
+      .end {
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-top: 2px solid rgba(255, 255, 255, 0.1);
+        /* height: 80px; */
+        padding: 15px;
+      }
+      @media (max-width: 850px) {
+        .main-content {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          padding: 30px 10px;
+          flex-wrap: wrap;
+        }
+        .main-content h2 {
+          font-size: 20px;
+          color: whitesmoke;
+          text-transform: uppercase;
+        }
+        .about {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .form {
+          padding: 20px;
+        }
+        .social {
+          padding: 20px 10px;
+        }
+        .social ul {
+          list-style: none;
+          margin: 20px;
+        }
+        .social ul li {
+          display: inline-block;
+          width: 55px;
+          height: 55px;
+          padding: 17.5px;
+          background-color: gray;
+          border-radius: 50%;
+          margin-right: 20px;
+        }
+      }
+      @media (max-width: 732px) {
+        .main-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding: 30px 10px;
+        }
+        .main-content h2 {
+          font-size: 20px;
+          color: whitesmoke;
+          text-transform: uppercase;
+          margin-top: 20px;
+        }
+        .about {
+          width: 100%;
+        }
+        .social ul {
+          list-style: none;
+        }
+        .social ul li {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          padding: 10px;
+          background-color: gray;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        .a{
+          color: gray;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>CONTENT HERE</main>
+    <footer>
+      <section class="main-content">
+        <section class="about">
+          <h2>About</h2>
+          <p style="color: gray;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magni tenetur unde. Illo aperiam cupiditate amet adipisci vitae magnam voluptatem similique! Quos nostrum voluptatum velit iste, alias ipsum voluptates modi fugiat, laboriosam veritatis eaque provident sapiente quisquam quae accusamus minima cum qui mollitia eligendi ut impedit? Aspernatur, laudantium. Nam, blanditiis.
+          </p>
+        </section>
+        <section class="link">
+          <h2>CATEGORIES</h2>
+          <ul>
+            <li><a href="./Assignment1.html">C</a></li>
+            <li><a href="./Assignment2.html">PHP</a></li>
+            <li><a href="./Assignment3.html">JAVA</a></li>
+            <li><a href="./index.html">ANDROID</a></li>
+            <li><a href="./Assignment5.html">HYBRID APPS</a></li>
+          </ul>
+        </section>
+        <section class="link">
+          <h2>QUICK LINKS</h2>
+          <ul>
+            <li><a href="./Assignment6.html">ABOUT US</a></li>
+            <li><a href="./Assignment7.html">CONTACT US</a></li>
+            <li><a href="./Assignment8.html">PRIVACY POLICY</a></li>
+            <li><a href="./Assignment9.html">STARTUP</a></li>
+            <li><a href="./Assignment10.html">DISCLAIMER</a></li>
+          </ul>
+        </section>
+        <section class="link">
+          <h2>Contact Us</h2>
+          <ul>
+            <li>
+              <a href="../index.html"
+                ><i class="fa fa-home"></i><span> Home Page</span></a
+              >
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i
+              ><span> hritik.raheja_cs19@gla.ac.in</span>
+            </li>
+            <li>
+              <i class="fa fa-phone-square"></i><span> Mobile: 8057153961</span>
+            </li>
+            <li>
+              <a
+                href="https://github.com/hritikraheja"
+                ><i class="fa fa-github-square"></i
+                ><span> hritikraheja</span></a
+              >
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="form">
+        <p>Register for Free</p>
+        <a href="#">signup!</a>
+      </section>
+      <section class="social">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i class="fa fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/dheeraj-singhal/"
+              ><i class="fa fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.google.com/"><i class="fa fa-google"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/dheeraj-singhal/"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <section class="end">
+        <p>
+          Copyright © 2020 All Rights Reserved by
+          <a href="https://github.com/hritikraheja/">Hritik Raheja</a>.
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>

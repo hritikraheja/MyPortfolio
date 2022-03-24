@@ -1,0 +1,18 @@
+{
+    "results":[
+        {
+            "name" : "Rajma Chawal",
+            "price": 50,
+            "genre" : "Regular",
+            "description" : "Full Meal",
+            "imageUrl" : "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+        },
+        {
+            "name" : "Spring Rolls",
+            "price": 50,
+            "genre" : "Regular",
+            "description" : "Snacks",
+            "imageUrl" : "https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455__480.jpg" 
+        }
+    ]
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical 1 Dated: 04-10-21</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .table_heading{
+          font-size: 2em;
+          padding: 20px;
+      }
+      table {
+        text-align: center;
+        line-height: 20px;
+        border: 2px solid #34495e;
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 5px;
+        border-spacing: 0;
+      }
+      .head{
+          font-size: 2em;
+          padding: 20px;
+          background-color: rgb(212, 248, 248);
+          color: darkblue;
+          margin-right: 20px;
+      }
+      .amount{
+          color: green;
+          font-size: 1.5em;
+          margin: 10px;
+          padding: 20px;
+      }
+      .even_row{
+          background-color: rgb(212, 248, 248);
+      }
+      .fa-check{
+          color: green;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          width: 100%;
+          height: 100%;
+      }
+      
+      .fa-times{
+          color: red;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          width: 100%;
+          height: 100%;
+      }
+
+      .signup_button{
+          background-color: darkblue;
+          color: white;
+          padding: 10px;
+          width: 50%;
+          margin: 20px;
+          font-size: 1em;
+          border-radius: 10px;
+      }
+      .text{
+          padding-top: 20px;
+          padding-bottom: 20px;
+      }
+
+      td{
+          border-right: 10px;
+          border-color: #000;
+      }
+      #column1{
+          background-color: wheat;
+      }
+      #column2{
+          background-color: aquamarine;
+      }
+      #column3{
+          background-color: cornsilk;
+      }
+      #column4{
+          background-color: lightseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="4" style="padding: 20px;"><span class="table_heading">SELECT YOUR PLAN</span></th>
+        </tr>
+        <tr class="top-row">
+          <th class="head" id="column1"><i class="fa fa-home"></i> BASIC</th>
+          <th class="head" id="column2"><i class="fa fa-500px"></i> PLUS</th>
+          <th class="head" id="column3"><i class="fa fa-leaf"></i> DELUXE</th>
+          <th class="head" id="column4"><i class="fa fa-rss"> </i> PRO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="amount">Rs. 500/-</td>
+          <td class="amount">Rs. 1500/-</td>
+          <td class="amount">Rs. 2500/-</td>
+          <td class="amount">Rs. 3500/-</td>
+        </tr>
+        <tr class="even_row">
+          <td class="text" id="column1">60 Pages</td>
+          <td class="text" id="column2">75 Pages</td>
+          <td class="text" id="column3">Unlimited</td>
+          <td class="text" id="column4">Unlimited</td>
+        </tr>
+        <tr>
+          <td class="text">3 Users</td>
+          <td class="text">5 Users</td>
+          <td class="text">10 Users</td>
+          <td class="text">Unlimited</td>
+        </tr>
+        <tr class="even_row">
+          <td class="text" id="column1">10 Sites</td>
+          <td class="text" id="column2">25 Sites</td>
+          <td class="text" id="column3">100 Sites</td>
+          <td class="text" id="column4">Unlimited</td>
+        </tr>
+        <tr>
+          <td class="text">50 MB</td>
+          <td class="text">250 MB</td>
+          <td class="text">1 GB</td>
+          <td class="text">5 GB</td>
+        </tr>
+        <tr class="even_row">
+          <td class="text" id="column1">included</td>
+          <td class="text" id="column2">included</td>
+          <td class="text" id="column3">included</td>
+          <td class="text" id="column4">included</td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-check"></i></td>
+          <td><i class="fa fa-check"></i></td>
+          <td><i class="fa fa-check"></i></td>
+          <td><i class="fa fa-check"></i></td>
+        </tr>
+        <tr>
+            <tr class="even_row">
+                <td><i class="fa fa-times" id="column1" style="background-color: wheat;"></i></td>
+                <td><i class="fa fa-check" id="column2" style="background-color: aquamarine"></i></td>
+                <td><i class="fa fa-check" id="column3" style="background-color: cornsilk"></i></td>
+                <td><i class="fa fa-check" id="column4" style="background-color: lightseagreen"></i></td>
+              </tr>
+              <tr>
+                <td><i class="fa fa-times"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr class="even_row">
+                <td><i class="fa fa-times"  style="background-color: wheat;"></i></td>
+                <td><i class="fa fa-times" style="background-color: aquamarine"></i></td>
+                <td><i class="fa fa-check"  style="background-color: cornsilk"></i></td>
+                <td><i class="fa fa-check"  style="background-color: lightseagreen"></i></td>
+              </tr>
+              <tr>
+                <td><i class="fa fa-times"></i></td>
+                <td><i class="fa fa-times"></i></td>
+                <td><i class="fa fa-times"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr class="even_row">
+                  <td style="background-color: wheat;"><button class="signup_button">SIGNUP</button></td>
+                  <td style="background-color: aquamarine;"><button class="signup_button"  >SIGNUP</button></td>
+                  <td style="background-color: cornsilk;"><button class="signup_button"  >SIGNUP</button></td>
+                  <td style="background-color: lightseagreen"><button class="signup_button"  >SIGNUP</button></td>
+              </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

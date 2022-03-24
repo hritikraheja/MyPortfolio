@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 8</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .header{
+            margin-top: 0px;
+            padding: 0px;
+            text-align: center;
+            width: 100%;
+            color: #FFF;
+            font-size: 2vw;
+            background-color: gray;
+            margin-right: 1vw;
+            height: 7vw;
+            line-height: 7vw;
+            display: flex;
+            justify-content: center;
+        }
+        .navButton{
+            color: #FFF;
+            text-decoration: none;
+            margin-right: 7vw;
+        }
+        .header .navButton a:hover{
+            background-color: white;
+            color: black;
+        }
+        .paragraph{
+            margin: 10px;
+            padding-top: 10px;
+            padding: 0px;
+            text-align: center;
+            width: auto;
+            color: #FFF;
+            font-size: 3vw;
+        }
+        .banner{
+            width: 100%;
+            margin-top: 4vw;
+        }
+        .card{
+            border: 0.4vw outset black;
+            border-radius: 2vw;
+            background-color : rgb(245, 237, 242);
+            text-align: center;
+            height: auto;
+            padding: 1vw;
+            margin-right: 1vw;
+            margin-left: 2vw;
+            width: auto;
+        }
+        #p3{
+            background-color: gray;
+            height: 51vw;
+            font-size: 3vw;
+            text-align: left;
+            width: 50%;
+            padding: 1vw;
+        }
+        #p41{
+            background-image: url(./logosAndImages/p1.jpg);
+            width: 100%;
+            height:15vw;
+            margin-right: 3vw;
+            color: #000;
+        }
+        #p42{
+            background-image: url(./logosAndImages/p2.jpeg);
+            height: 15vw;
+            width: 100%;
+            color: #000;
+        }
+        #p43{
+            background-image: url(./logosAndImages/p3.jpg);
+            height: 15vw;
+            width: 100%;
+            color: #000;
+        }
+        #p5{
+            border-radius: 0%;
+            background-color: red;
+            height: 25vw;
+            width: 20vw;
+            margin: auto;
+        }
+        #p6{
+            background-color: plum;
+            height: 9vw;
+            line-height: 2vw;
+            padding: 1vw;
+        }
+        .heading{
+            color: #000;
+            text-align: center;
+            margin-top: 7vw;
+            font-size: 4vw;
+        }
+        .circle{
+            border-radius: 50%;
+            background-color: goldenrod;
+            height: 20vw;
+            width: 20vw;
+            margin: auto;
+        }
+        .i{
+            width: 18vw;
+            height: 12vw;
+            border: 0px outset black;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" id="head" style="position: fixed; margin-right: 1vw;">
+        <a href="#" class="navButton">HOME</a>
+        <a href="#about" class="navButton" >ABOUT US</a>
+        <a href="#team" class="navButton">TEAM</a>
+        <a href="#tech" class="navButton">TECHNOLOGIES</a>
+        <a href="#p6" class="navButton">CONTACT</a>
+    </div>
+    <div class="header"></div>
+    <img src="./logosAndImages/bannerBackground.jpeg" alt="Banner Background" class="banner" id="banner">
+    <h2 class="heading" id="team">TEAM MEMBERS</h2>
+    <div style="display: flex; justify-content: center; margin-top: 30px;">
+    <img src="./logosAndImages/1.png" alt="First Person's Image" class="circle">
+    <img src="./logosAndImages/2.png" alt="Second Person's Image" class="circle">
+    <img src="./logosAndImages/4.png" alt="Third Person's Image" class="circle">
+    <img src="./logosAndImages/3.png" alt="Fourth Person's Image" class="circle">
+    </div>
+    <h2 class="heading" id="about">ABOUT US</h2>
+    <div id="about" style="display: flex; justify-content: center; width: auto;">
+    <p class="paragraph" id="p3">ABOUT PROJECTS<br><br><span style="font-size: 1.5vw;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illo blanditiis iure
+         esse quaerat quibusdam voluptates sint consequuntur nesciunt voluptatibus sit, ipsum enim sapiente odit aliquam repellat ipsam illum! Explicabo aperiam temporibus
+          molestias, labore eum similique voluptate consectetur atque officiis, magni libero quisquam ipsam laborum quos magnam nesciunt neque ad minima, modi possimus 
+          ratione? Reiciendis doloribus non odit rem. Deleniti laudantium voluptatum rerum mollitia illum labore voluptates perferendis vero et iure id tempore sapiente 
+          consectetur nulla officia error cum quis nostrum quod commodi obcaecati fugiat, eius odit facere. Neque, voluptatem! Perferendis nulla ab explicabo praesentium 
+          quidem aliquid minima commodi incidunt.</span></p>
+    <div style="display: inline; width: 50%;">
+        <p class="paragraph" id="p41">ARTICLE-1</p>
+        <p class="paragraph" id="p42" style="margin-top: 4vw;">ARTICLE-2</p>
+        <p class="paragraph" id="p43" style="margin-top: 4vw;">ARTICLE-3</p>
+    </div>
+</div>
+<h2 class="heading" id="tech">TECHNOLOGIES USED</h2>
+<div style="display: inline-flex; margin-left: auto; margin-right: auto;">
+    <div class="card">
+        <img src="./logosAndImages/htmlCardLogo.png" class="i"><br>
+        <p>HTML stands for Hyper Text Markup Language. 
+            HTML is the standard markup language for creating Web pages. 
+            HTML describes the structure of a Web page. 
+            HTML consists of a series of elements.</p>
+        <br><a href="./htmlPage.html">
+        <button style="background-color: rgb(10, 193, 248);">
+            Read More
+        </button>
+    </a>
+    </div>
+    <div class="card">
+        <img src="./logosAndImages/cssCardLogo.png" class="i"><br>
+        <p>CSS stands for Cascading Style Sheets. 
+            CSS describes how HTML elements are to be displayed on screen, paper, or in other media. 
+            CSS saves a lot of work. It can control the layout of multiple web pages all at once.</p>
+        <br><a href="./cssPage.html">
+        <button style="background-color: rgb(54, 106, 248);">
+            Read More
+        </button>
+    </a>
+    </div>
+    <div class="card">
+        <img src="./logosAndImages/javascriptCardLogo.png" class="i"><br>
+        <p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive(e.g., popup menus, etc.). 
+            JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
+        <br><a href="./jsPage.html">
+        <button style="background-color: rgb(248, 153, 10);">
+            Read More
+        </button>
+    </a>
+    </div>
+    <div class="card">
+        <img src="./logosAndImages/bootstrapCardLogo.jpg" class="i"><br>
+        <p>Bootstrap is a free and open-source tool collection for creating responsive websites and web applications. 
+            It is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.<br></p>
+        <br><a href="./bootstrappage.html">
+        <button style="background-color: rgb(95, 4, 180);">
+            Read More
+        </button>
+    </a>
+    </div>
+</div>
+<h2 class="heading">CONTACT</h2>
+<p class="paragraph" id="p6" style="font-size: 2vw;">Hritik Raheja<br>hritik.raheja_cs19@gla.ac.in<br><a href="#"><br>Back To Top</a></p>
+</body>
+</html>
