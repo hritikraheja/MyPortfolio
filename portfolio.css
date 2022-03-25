@@ -484,7 +484,7 @@
      color: gold;
  }
 
-/* @media (min-width : 0px) and (max-width:480px) {
+@media (min-width : 0px) and (max-width:480px) {
     * {
         margin: 0px;
     }
@@ -1335,4 +1335,4 @@
     .q1:hover{
         color: gold;
     }
-} */
+}
