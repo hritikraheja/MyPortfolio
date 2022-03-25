@@ -145,6 +145,7 @@
 
 .about_div{
     margin-top: 50px;
+    width: 100%;
 }
 
 .about_me_heading{
@@ -482,9 +483,13 @@
      color: gold;
  }
 
-@media (max-width:480px) {
+@media (min-width : 0px) and (max-width:480px) {
     * {
         margin: 0px;
+    }
+
+    .nav_bar{
+        margin-top: 10px;
     }
 
     .nav_bar a{
@@ -492,7 +497,7 @@
     }
 
     .nav_bar li{
-        font-size: x-large;
+        font-size: medium;
         margin-left: 20px;
     }
     
@@ -519,18 +524,18 @@
         font-size: small;
     }
     .pic{
-        display: block;
         margin: auto;
         margin-top: 50px;
-        width: 70%;
+        width: 100%;
         height: fit-content;
-        float: none;
+        
     }
     .download_button{
         font-size: small;
     }
 
     .about_div{
+        width: 100%;
         margin-top: 30px;
     }
     
@@ -538,8 +543,8 @@
         text-align: justify;
         font-size: large;
         display: block;
-        margin: auto;
-        width: 70%;
+        margin: 0px;
+        width: 100%;
         margin-top: 25px;
     }
     
@@ -612,6 +617,93 @@
      .preview_img{
          max-width: 95%;
      }
+
+
+     footer{
+        background-color: #000;
+        margin-top: 50px;
+        width: 100%;
+    }
+   
+    .footer_links{
+       width: fit-content;
+       display: flex;
+       list-style-type: none;
+       margin-left: auto;
+       margin-right: auto;
+       padding: auto;
+       margin-top: 0px;
+    }
+   
+    .footer_links a{
+       color: #FFF;
+       text-align: center;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       padding-left: 10px;
+       padding-right: 10px;
+       text-decoration: none;
+       font-family: Arial, Helvetica, sans-serif;
+       float: right;
+       font-size: 0.6rem;
+    }
+   
+    .footer_links a:hover{
+        color: wheat;
+        transform: scale(1.1);
+        transition-duration: 0.3s;
+    }
+   
+    .sep{
+        font-size: 1 rem;
+        color: white;
+        padding-top: 10px;
+        line-height: 0.5rem;
+    }
+   
+    .icon{
+        color: #008080;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 20px;
+        font-size: 1.3rem;
+    }
+   
+    .icon:hover{
+        transform: rotate(360deg);
+        color: wheat;
+        transition-duration: 0.6s;
+    }
+   
+    .footer_icons{
+        display: flex;
+        margin: auto;
+        margin-top: 50px;
+        width: fit-content;
+    }
+   
+    .quote_div{
+        background-color: #008080;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 0%;
+    }
+   
+    .q1{
+        text-align: center;
+        font-size: 0.8rem;
+        display: block;
+        color: #FFF;
+        margin: auto;
+        margin-bottom: 0px;
+        padding: 10px;
+        padding-top: 20px;
+    }
+   
+    .q1:hover{
+        color: gold;
+    }
 }
 
 @media (max-width:900px) {
