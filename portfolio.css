@@ -33,9 +33,48 @@
     } */
 }
 
-@keyframes anim2 {
+@keyframes anim1 {
     0%{
-        transform: skew(2.1);
+        transform: scale(1.5);
+    }
+    20%{
+        transform: scale(1);
+    }
+}
+
+@keyframes anim2 {
+    20%{
+        transform: scale(1.5);
+    }
+    40%{
+        transform: scale(1);
+    }
+}
+
+@keyframes anim3 {
+    40%{
+        transform: scale(1.5);
+    }
+    60%{
+        transform: scale(1);
+    }
+}
+
+@keyframes anim4 {
+    60%{
+        transform: scale(1.5);
+    }
+    80%{
+        transform: scale(1);
+    }
+}
+
+@keyframes anim5 {
+    80%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
     }
 }
 .nav_bar{
@@ -403,6 +442,57 @@
     margin: auto;
  }
 
+ .loading_animation{
+     position: absolute;
+     z-index: 1;
+     width: 100%;
+     height: 100%;
+     background-color: #FFF;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+
+
+ .circle{
+     border-radius: 50%;
+     background-color: #008080;
+     width: 30px;
+     height: 30px;
+     margin: 8px;
+ }
+ 
+ #a{
+     animation-name: anim1;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+ }
+ #b{
+    animation-name: anim2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#c1{
+    animation-name: anim3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#d{
+    animation-name: anim4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#e{
+    animation-name: anim5;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+ .loading{
+     width: 100%;
+     height: fit-content;
+     position: relative;
+ }
+
  .acceptance_rate{
      display: block;
      margin: auto;
@@ -719,6 +809,14 @@
     .q1:hover{
         color: gold;
     }
+
+    .circle{
+        border-radius: 50%;
+        background-color: #008080;
+        width: 15px;
+        height: 15px;
+        margin: 6px;
+    }
 }
 
 @media (max-width:900px) {
@@ -858,6 +956,13 @@
    
     .q1:hover{
         color: gold;
+    }
+    .circle{
+        border-radius: 50%;
+        background-color: #008080;
+        width: 20px;
+        height: 20px;
+        margin: 7px;
     }
 }
 
@@ -1086,6 +1191,13 @@
     .q1:hover{
         color: gold;
     }
+    .circle{
+        border-radius: 50%;
+        background-color: #008080;
+        width: 20px;
+        height: 20px;
+        margin: 7px;
+    }
 }
 
 @media (max-width:900px) {
@@ -1217,6 +1329,13 @@
    
     .q1:hover{
         color: gold;
+    }
+    .circle{
+        border-radius: 50%;
+        background-color: #008080;
+        width: 20px;
+        height: 20px;
+        margin: 7px;
     }
 }
 

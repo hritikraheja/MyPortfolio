@@ -94,5 +94,17 @@ $.getJSON(
      a.setAttribute('class', 'acceptance_rate');
      b.innerHTML = "Acceptance Rate : " + acceptanceRate[0] + "%";
      b.setAttribute('class', 'acceptance_rate')
+     var circleA = document.getElementById('a');
+     var circleB = document.getElementById('b');
+     var circleC = document.getElementById('c1');
+     var circleD = document.getElementById('d');
+     var circleE = document.getElementById('e');
+     circleA.style.animationPlayState = 'paused';
+     circleB.style.animationPlayState = 'paused';
+     circleC.style.animationPlayState = 'paused';
+     circleD.style.animationPlayState = 'paused';
+     circleE.style.animationPlayState = 'paused';
+     var loading_layout = document.getElementById('loading_layout');
+     loading_layout.style.display = 'none';
   }
 );
