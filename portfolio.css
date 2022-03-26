@@ -332,11 +332,6 @@
     text-decoration: none;
  }
 
- @keyframes showAnimation {
-     from{top : 0px;}
-     to{top : 60px;}
-     }
-
  .preview{
      display: none;
      width: 50%;
@@ -370,6 +365,25 @@
     color: white;
     text-decoration: none;
     box-shadow: 10px 10px 5px #aaaaaa;
+ }
+
+ .copied_message{
+    display: none;
+    margin: auto;
+    position: fixed;
+    bottom: 170px;
+    outline: none;
+    border-radius: 20px;
+    outline: none;
+ }
+
+ .message{
+     outline: none;
+     background-color: rgba(0, 0, 0, 0.747);
+     color: #FFF;
+     padding: 7px;
+     border-radius: 20px;
+     font-size: small;
  }
 
  .stats_heading{
@@ -667,7 +681,7 @@
         margin-left: 30px;
         margin-right: 30px;
         margin-top: 20px;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
    
     .icon:hover{
@@ -807,7 +821,7 @@
         margin-left: 30px;
         margin-right: 30px;
         margin-top: 20px;
-        font-size: 1.3rem;
+        font-size: 1.7rem;
     }
    
     .icon:hover{
@@ -1034,7 +1048,7 @@
         margin-left: 30px;
         margin-right: 30px;
         margin-top: 20px;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
    
     .icon:hover{
@@ -1166,7 +1180,7 @@
         margin-left: 30px;
         margin-right: 30px;
         margin-top: 20px;
-        font-size:1.3rem;
+        font-size:1.7rem;
     }
    
     .icon:hover{
@@ -1297,7 +1311,7 @@
         margin-left: 30px;
         margin-right: 30px;
         margin-top: 20px;
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
    
     .icon:hover{
